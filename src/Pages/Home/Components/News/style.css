@@ -1,0 +1,12 @@
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.news-button {
+    cursor: pointer;
+}

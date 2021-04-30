@@ -1,0 +1,54 @@
+.addNewsMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow: auto;
+}
+
+.addNews {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.addNews-title {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.addNews-button {
+    background-color: var(--green2);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.addNews-button:hover {
+    background-color: var(--green);
+}
+
+.addNews-close {
+    color: crimson;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

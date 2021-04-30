@@ -1,0 +1,21 @@
+.inputFieldWithLabel-inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.inputFieldWithLabel-label {
+    color: black;
+    margin-bottom: 5px;
+    font-family: var(--font);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.inputFieldWithLabel-input {
+    padding: 5px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    font-size: 18px;
+}

@@ -17,7 +17,7 @@
 }
 
 .message-success {
-    background-color: #0cc15e;
+    background-color: var(--green2);
 }
 
 .message-alert {

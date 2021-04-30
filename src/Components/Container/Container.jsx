@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Container({children, className}) {
+function Container({children, className = ''}) {
     return (
         <div className={'container ' + className}>
             {children}
