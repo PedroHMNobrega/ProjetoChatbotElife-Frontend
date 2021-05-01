@@ -1,12 +1,32 @@
 .news-container {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--white);
     color: black;
     width: 100%;
     padding: 20px 10px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
 }
 
-.news-button {
+.news-container > * {
+    width: 15%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-pen, .news-trash {
     cursor: pointer;
+    font-size: 20px;
+}
+
+.news-pen {
+    margin-right: 10px;
+    color: var(--green);
+}
+
+.news-trash {
+    color: var(--blue);
 }

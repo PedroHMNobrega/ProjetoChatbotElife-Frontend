@@ -25,7 +25,6 @@ function AddNews({setShowAddNews, setNewsList, newsList, setSuccess}) {
                 category,
                 url
             });
-
             setNewsList([news, ...newsList]);
             setSuccess("Notícia adicionada com sucesso !");
             setShowAddNews(false);

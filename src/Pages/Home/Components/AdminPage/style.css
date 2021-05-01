@@ -1,5 +1,5 @@
 .admin-newsListContainer {
-    background-color: var(--gray);
+    background-color: var(--white);
     position: relative;
     top: 100px;
     display: flex;
@@ -13,16 +13,49 @@
 
 .admin-title {
     margin: 20px 0;
-    color: white;
-    font-size: 30px;
+    color: var(--blue);
+    font-size: 35px;
     font-weight: bold;
 }
 
 .admin-newsList {
-    padding: 10px 0 20px 0;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+}
+
+.admin-noNews {
+    color: #8d99ae;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.admin-noNews h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.admin-noNewsIcon {
+    font-size: 50px;
+}
+
+.admin-tableHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    padding-bottom: 5px;
+}
+
+.admin-tableHeader h2 {
+    width: 15%;
+    color: #808080;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
 }
 
 .admin-addNewsButton {

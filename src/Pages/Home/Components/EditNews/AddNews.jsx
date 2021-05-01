@@ -5,7 +5,7 @@ import Message from "../../../../Components/Message";
 import InputFieldWithLabel from "../../../../Components/InputFieldWithLabel";
 import {newsApi} from "../../../../api/newsApi.js";
 
-function EditNews({news, setShowEditNews, setNews, setSuccess}) {
+function EditNews({news, setShowEditNews, listNews, setSuccess}) {
     const [imgUrl, setImageUrl] = useState(news.imgUrl);
     const [title, setTitle] = useState(news.title);
     const [description, setDescription] = useState(news.description);
@@ -20,7 +20,7 @@ function EditNews({news, setShowEditNews, setNews, setSuccess}) {
             await newsApi.updateNews(news._id, newNews);
 
             newNews._id = news._id;
-            setNews(newNews);
+            listNews();
             setSuccess("Notícia editada com sucesso !");
             setShowEditNews(false);
         } catch (e) {

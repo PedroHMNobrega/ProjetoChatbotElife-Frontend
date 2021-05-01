@@ -1,11 +1,12 @@
 :root {
-    --background:#785964;
-    --green: #49A078;
-    --green2: #40996f;
-    --white: #E3E3E3;
-    --blue: #08415C;
+    --background:#457b9d;
+    --green: #239284;
+    --green2: #2a9d8f;
+    --white: #f1faee;
+    --blue: #1d3557;
     --purple: #785964;
     --gray: #71816D;
+    --crimson: #e63946;
     --bold: 500;
     --thin: 300;
     --font: 'Ubuntu', sans-serif;
