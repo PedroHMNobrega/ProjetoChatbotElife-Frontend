@@ -3,18 +3,19 @@ import "./style.css";
 import Container from "../../../../Components/Container";
 import InputField from "../../../../Components/InputField";
 import {faLock} from "@fortawesome/free-solid-svg-icons";
-import validarPin from "../../../../Services/validarPin.js";
+import {authApi} from "../../../../api/authApi.js";
 import Message from "../../../../Components/Message";
 
 function PinPage({setShowPinPage}) {
     const [pin, setPin] = useState('');
     const [message, setMessage] = useState('');
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
-        if(validarPin(pin)) {
+        try {
+            await authApi.validarPin(pin);
             setShowPinPage(false);
-        } else {
+        } catch (e) {
             setMessage('Pin Inválido. Tente Novamente!');
             setPin('');
         }
